@@ -7,7 +7,7 @@ const stripeLib = require('stripe');
 dotenv.config();
 const app = express();
 const stripe = stripeLib(process.env.STRIPE_SECRET_KEY);
-const endpointSecret = "whsec_9f7e09af8e1273e326d8a772f36420391113d1ef2e4a0b8686a909a1918c5085";
+const endpointSecret = "whsec_YOUR_KEY_FROM_YOUR_PC";
 
 app.use(cors());
 app.use(express.json());  // NOTE Only for regular routes
